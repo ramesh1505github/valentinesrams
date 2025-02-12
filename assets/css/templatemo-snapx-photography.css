@@ -954,7 +954,7 @@ Banner Style
   padding-top: 290px;
   padding-bottom: 240px;
   text-align: center;
-  background-color: #2a2a2a;
+  background-color: green;
 }
 
 .main-banner::after {
@@ -968,32 +968,28 @@ Banner Style
   z-index: -2; /* Ensures overlay is behind content */
 }
 
-
 .main-banner h2 {
   color: yellow;
   font-size: 64px;
   font-weight: 700;
   line-height: 74px;
-}
-
-.main-banner h2 em {
-  font-style: normal;
-  color: #00bdfe;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
 }
 
 .main-banner p {
-      color: black;
-    font-weight: 700;
-    font-size: 29px;
-    padding: 30px 0px;
-    margin: 40px 75px 0px 75px;
-    border-top: 1px solid rgba(250,250,250,0.2);
+  color: black;
+  font-weight: 700;
+  font-size: 29px;
+  padding: 30px 0px;
+  margin: 40px 75px 0px 75px;
+  border-top: 1px solid rgba(250,250,250,0.2);
 }
 
 .main-banner .buttons {
   margin-top: 30px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .main-banner .big-border-button a {
@@ -1034,6 +1030,49 @@ Banner Style
 .main-banner .icon-button a:hover {
   color: #00bdfe;
 }
+
+/* Mobile View (Up to 768px width) */
+@media screen and (max-width: 768px) {
+  .main-banner {
+    background-image: url(../images/kutty.png);
+    background-size: contain; /* Ensures full visibility */
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-top: 200px; /* Adjust padding for smaller screens */
+    padding-bottom: 150px;
+  }
+
+  .main-banner h2 {
+    font-size: 40px; /* Reduce font size for smaller screens */
+    line-height: 50px;
+    padding: 0 20px;
+  }
+
+  .main-banner p {
+    font-size: 18px;
+    padding: 20px 15px;
+    margin: 20px auto;
+    border-top: none;
+  }
+
+  .main-banner .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
+  }
+
+  .main-banner .big-border-button a {
+    font-size: 18px;
+    padding: 12px 25px;
+    margin-bottom: 10px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .main-banner .icon-button a {
+    font-size: 14px;
+  }
+}
+
 
 
 
