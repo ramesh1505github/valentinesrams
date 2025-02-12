@@ -576,7 +576,7 @@ Header Style
   }
   .header-area .main-nav .border-button {
     position: absolute;
-    top: 15px;
+    top: 5px;
     right: 15px;
   }
   .header-area.header-sticky .nav li a:hover,
